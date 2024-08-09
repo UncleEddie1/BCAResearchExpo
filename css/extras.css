@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.search-submit {
+    background: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    color:red;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.search.search-open,
+.no-js .search {
+    width: 100%;
+}
+
+.search.search-open .search-submit,
+.no-js .search .search-submit {
+/*    z-index: 90;*/
+}
+/*.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}*/
+
+/*.icon-search:before {
+    content: "";
+}*/
+
+.search.search-open .icon-search,
+.no-js .search .icon-search {
+    background: #4999b6;
+    color: #fff;
+    z-index: 11;
+}
+
+input[type="search"].search-input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+.search-input::-webkit-input-placeholder {
+    color: #4999b6;
+}
+ 
+.search-input:-moz-placeholder {
+    color: #4999b6;
+}
+ 
+.search-input::-moz-placeholder {
+    color: #4999b6;
+}
+ 
+.search-input:-ms-input-placeholder {
+    color: #4999b6;
+}
+
+.dropbtn {
+    background-color: #00557a;
+    /*color: white;
+    padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	margin-left: -1.3em;
+    background-color: #00557a;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+/*.dropdown-content a:hover {background-color: #4999b6}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown:hover .dropbtn {
+    background-color: #4999b6;
+}*/
+
+
