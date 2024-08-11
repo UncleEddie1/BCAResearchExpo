@@ -9,6 +9,7 @@
         $(document).ready(function(){
             $("#header").load("header.html");
             $("#nav").load("nav.html");
+            $("footer").load("footer.html");
         });
     </script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
@@ -75,8 +76,15 @@
         <aside>
         	<section id="upcoming" title="Upcoming Events">
             	<h2>Upcoming Events</h2>
+                    
                 <ul>
-                	<li id="registration" class="noBorder">
+                    <li id="Coming Soon" class="noBorder">
+                        <div class="cell"><h4>Coming Soon</h4></div><br>
+                        <div class="cell">
+                            <p>The BCA Research Expo Cycle will begin at the start of the year.</p>
+                        </div>
+                    </li>
+                	<!-- <li id="registration" class="noBorder">
                     	<div class="cell leftCell"><h4>25</h4><div class="smallBlue">november<br>
                    	  2019</div></div>
                         <div class="cell">
@@ -119,7 +127,7 @@
                             <h3>Awards</h3>
                             <p>Final Judging and Awards Ceremony; All are welcome</p>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <a class="forSmallDevices" href="#">Top of page</a>
@@ -167,10 +175,9 @@
             </section>
             <a class="forSmallDevices" href="#">Top of page</a>
         </aside>
-    <footer> BCA Research Expo&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:researchexpo@bergen.org">researchexpo@bergen.org</a>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 200&nbsp;Hackensack&nbsp;Avenue,&nbsp;Hackensack,&nbsp;NJ&nbsp;07061<br>
-&copy;2019 Bergen County Academies - All rights reserved.
-		<div id="vine"><img src="images/vine_left.png" width="146" height="93" alt="vine graphic"/></div>
-</footer>
+        <div id="vine"><img src="images/vine_left.png" width="146" height="93" alt="vine graphic"/></div>
+        <footer id="footer"></footer>
+
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script src="js/jquery.min.js"></script>
 	<script src="js/expo.js"></script>
