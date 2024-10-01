@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCA Research Expo - Contact Us</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#header").load("header.html");
             $("#nav").load("nav.html");
             $("footer").load("footer.html");
@@ -17,55 +18,59 @@
     <link href="css/researchExpo.css" rel="stylesheet" type="text/css">
 </head>
 <!-- The start of everything visible on the page -->
+
 <body>
-	<header id="header"></header> <!-- Header-->
+    <header id="header"></header> <!-- Header-->
     <nav id="nav"></nav> <!-- Nav Bar -->
     <!-- Begin main content section -->
-	<section id="subPages">
-	        	<article id="contact" title="Contact Us">
-            	<h2 class="subpage_headings greenTextColor">Contact Us</h2>
-                <p>For additional information, contact us at <a href="mailto:researchexpo@bergen.org">researchexpo@bergen.org</a><a class="forSmallDevices" href="#">Top of page</a></p>
- 			</article>
+    <section id="subPages">
+        <article id="contact" title="Contact Us">
+            <h2 class="subpage_headings greenTextColor">Contact Us</h2>
+            <p>For additional information, contact us at <a
+                    href="mailto:researchexpo@bergen.org">researchexpo@bergen.org</a><a class="forSmallDevices"
+                    href="#">Top of page</a></p>
+        </article>
     </section>
     <!-- end id "mainContent" -->
-        <!-- Begin aside section (right side of the page under the slides) -->
+    <!-- Begin aside section (right side of the page under the slides) -->
     <footer id="footer"></footer>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/expo.js"></script>
-	<script src="js/rwdImageMaps.min.js"></script>
-	<script>
-        $(document).ready(function(e) {
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/expo.js"></script>
+    <script src="js/rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
             $('img[usemap]').rwdImageMaps();
         });
-    </script>    
+    </script>
     <script>
-	 /*// DOM ready
-	 $(function() {
-      // Create the dropdown base
-      $("<select />").appendTo("nav");
-      
-      // Create default option "Go to..."
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Go to..."
-      }).appendTo("nav select");
-      
-      // Populate dropdown with menu items
-      $("nav a").each(function() {
-       var el = $(this);
-       $("<option />", {
-           "value"   : el.attr("href"),
-           "text"    : el.text()
-       }).appendTo("nav select");
-      });
-      
-	   // To make dropdown actually work
-      $("nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
-	 
-	 });*/
-	</script>
+        /*// DOM ready
+        $(function() {
+         // Create the dropdown base
+         $("<select />").appendTo("nav");
+         
+         // Create default option "Go to..."
+         $("<option />", {
+            "selected": "selected",
+            "value"   : "",
+            "text"    : "Go to..."
+         }).appendTo("nav select");
+         
+         // Populate dropdown with menu items
+         $("nav a").each(function() {
+          var el = $(this);
+          $("<option />", {
+              "value"   : el.attr("href"),
+              "text"    : el.text()
+          }).appendTo("nav select");
+         });
+         
+          // To make dropdown actually work
+         $("nav select").change(function() {
+           window.location = $(this).find("option:selected").val();
+         });
+        
+        });*/
+    </script>
 </body>
+
 </html>

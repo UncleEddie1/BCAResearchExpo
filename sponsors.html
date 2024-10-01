@@ -1,67 +1,78 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCA Research Expo - Sponsors</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#header").load("header.html");
-            $("#nav").load("nav.html");
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BCA Research Expo - Sponsors</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#header").load("header.html");
+			$("#nav").load("nav.html");
 			$("footer").load("footer.html");
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Monda:400,700|Titillium+Web:600" rel="stylesheet">
-    <link href="css/researchExpo.css" rel="stylesheet" type="text/css">
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monda:400,700|Titillium+Web:600" rel="stylesheet">
+	<link href="css/researchExpo.css" rel="stylesheet" type="text/css">
 </head>
 <!-- The start of everything visible on the page -->
+
 <body>
 	<header id="header"></header> <!-- Header-->
-    <nav id="nav"></nav> <!-- Nav Bar -->
-    <!-- Begin main content section -->
+	<nav id="nav"></nav> <!-- Nav Bar -->
+	<!-- Begin main content section -->
 	<section id="subPages">
-			<div style="margin-top: 20px; text-align:center">
-				<img src="images/BergenSeal_125x110.jpg" alt="Bergen County Seal" width="125px" height="110px">
-				<img src="images/BCA_logo_125x110.jpg" alt="Bergen County Academies Logo" width="125px" height="110px">
-			</div>
-			<br>
-	        	<article id="sponsors" title="Sponsors">
-            	<h2 class="subpage_headings greenTextColor">Sponsorship</h2>
-                <p>The BCA Research Expo is sponsored by the Bergen County Academies, a public magnet school of choice, located in Hackensack, New Jersey. The Expo relies on donations from individuals and corporations who promote and support scientific discovery and who aim to promote STEM education for students at all levels.<a class="forSmallDevices" href="#">Top of page</a></p>
-			</article>
-                <span style="text-align:center;"><form target="_blank" name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value="87421d5a-b94d-4463-bb86-572f711b913b" /> <input class="donateBtn" type="submit" value ="Make A &#10; Donation" /> </form></span>
-            <a class="forSmallDevices" href="#">Top of page</a>
-</section>
-    <!-- end id "mainContent" -->
-        <!-- Begin aside section (right side of the page under the slides) -->
-    <footer id="footer"></footer>
+		<div style="margin-top: 20px; text-align:center">
+			<img src="images/BergenSeal_125x110.jpg" alt="Bergen County Seal" width="125px" height="110px">
+			<img src="images/BCA_logo_125x110.jpg" alt="Bergen County Academies Logo" width="125px" height="110px">
+		</div>
+		<br>
+		<article id="sponsors" title="Sponsors">
+			<h2 class="subpage_headings greenTextColor">Sponsorship</h2>
+			<p>The BCA Research Expo is sponsored by the Bergen County Academies, a public magnet school of choice,
+				located in Hackensack, New Jersey. The Expo relies on donations from individuals and corporations who
+				promote and support scientific discovery and who aim to promote STEM education for students at all
+				levels.<a class="forSmallDevices" href="#">Top of page</a></p>
+		</article>
+		<span style="text-align:center;">
+			<form target="_blank" name="PrePage" method="post"
+				action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type="hidden"
+					name="LinkId" value="87421d5a-b94d-4463-bb86-572f711b913b" /> <input class="donateBtn" type="submit"
+					value="Make A &#10; Donation" /> </form>
+		</span>
+		<a class="forSmallDevices" href="#">Top of page</a>
+	</section>
+	<!-- end id "mainContent" -->
+	<!-- Begin aside section (right side of the page under the slides) -->
+	<footer id="footer"></footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/expo.js"></script>
 	<script src="js/rwdImageMaps.min.js"></script>
 	<script>
-        $(document).ready(function(e) {
-            $('img[usemap]').rwdImageMaps();
-        });
-    </script>    
-    <script>
+		$(document).ready(function (e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+	</script>
+	<script>
 		//For auto slideshow___________________________________________________________________
 		var autoSlideIndex = 0;
 		carousel();
-		
+
 		function carousel() {
 			"use strict";
 			var i;
 			var x = document.getElementsByClassName("sponsorSlides");
 			for (i = 0; i < x.length; i++) {
-			  x[i].style.display = "none"; 
+				x[i].style.display = "none";
 			}
 			autoSlideIndex++;
-			if (autoSlideIndex > x.length) {autoSlideIndex = 1} 
-			x[autoSlideIndex-1].style.display = "block"; 
+			if (autoSlideIndex > x.length) { autoSlideIndex = 1 }
+			x[autoSlideIndex - 1].style.display = "block";
 			setTimeout(carousel, 3000); // Change image every 2 seconds
 		}
 	</script>
 </body>
+
 </html>

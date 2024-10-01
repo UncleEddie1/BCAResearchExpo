@@ -1,112 +1,142 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCA Research Expo - About</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#header").load("header.html");
-            $("#nav").load("nav.html");
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BCA Research Expo - About</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#header").load("header.html");
+			$("#nav").load("nav.html");
 			$("footer").load("footer.html");
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Monda:400,700|Titillium+Web:600" rel="stylesheet">
-    <link href="css/researchExpo.css" rel="stylesheet" type="text/css">
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monda:400,700|Titillium+Web:600" rel="stylesheet">
+	<link href="css/researchExpo.css" rel="stylesheet" type="text/css">
 </head>
 <!-- The start of everything visible on the page -->
+
 <body>
 	<header id="header"></header> <!-- Header-->
-  <nav id="nav"></nav> <!-- Nav Bar -->
-    <!-- Begin main content section -->
+	<nav id="nav"></nav> <!-- Nav Bar -->
+	<!-- Begin main content section -->
 	<section id="subPages">
-			<div class="slideshow-container">
-			  <div class="expoSlides fade">
+		<div class="slideshow-container">
+			<div class="expoSlides fade">
 				<div class="numbertext">1 / 3</div>
 				<img src="images/Analysis_806px.jpg" style="width:100%">
 				<div class="text">Analyzing the results from a Real Time PCR (RT-PCR) experiment</div>
-			  </div>
+			</div>
 
-			  <div class="expoSlides fade">
+			<div class="expoSlides fade">
 				<div class="numbertext">2 / 3</div>
 				<img src="images/Collaboration_806px.jpg" style="width:100%">
-				<div class="text">Students analyzing the statistical significance of ELISA data obtained from their wet lab experiment</div>
-			  </div>
+				<div class="text">Students analyzing the statistical significance of ELISA data obtained from their wet
+					lab experiment</div>
+			</div>
 
-			  <div class="expoSlides fade">
+			<div class="expoSlides fade">
 				<div class="numbertext">3 / 3</div>
 				<img src="images/purpose_806px.jpg" style="width:100%">
-				<div class="text">Studying a relationship between the exosomal transfer of alpha-synuclein and the potentially infectious nature of the protein</div>
-			  </div>
-
-			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="text">Studying a relationship between the exosomal transfer of alpha-synuclein and the
+					potentially infectious nature of the protein</div>
 			</div>
-			<br>
 
-			<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
-        	<article id="about" title="About the Expo">
-            	<h2 class="subpage_headings greenTextColor">About The Expo 2020</h2>
-            	<p class="increasedLineSpacing">We are proud to announce that the Bergen County Academies has been approved by the Society for Science and the Public, to run our own ISEF-affiliated fair The BCA Research Expo. Participation is limited to the students attending the school.  The BCA Expo is affiliated with the <a href="https://student.societyforscience.org/intel-isef" title="ISEF" target="_blank">Intel International Science and Engineering Fair (ISEF)</a>. Winners of the BCA Research Expo competition will represent BCA at ISEF. Each year, more than 7 million high school students around the world, develop original research projects and present their work at local science competitions with the hope of making it to the Intel International Science and Engineering Fair, a program of the Society for Science &amp; the Public. Approximately 1,700 winners of local, regional, state, and national competitions are invited to participate in this week-long celebration of science, technology, engineering, and math. At the event, these young innovators share ideas, showcase cutting-edge research, and compete for more than 4 million dollars in awards and scholarships.line<a class="forSmallDevices" href="#">Top of page</a></p>
-            	<section id="mission" title="Mission">
-				  <h2 class="subpage_headings greenTextColor">Our Mission</h2>
-				  <p><ul class="indented"><li>The Research Expo supports science education in a safe, student oriented atmosphere which challenges the student to think critically.</li>
-<li>The Research Expo promotes diversity which is celebrated and instruction which is personalized.</li>
-<li>The Research Expo will encourage the student to make ethical decisions and acquire skills to live in a global society by investigating bold solutions to complex challenges.</li>
-<li>Students, teachers, scientists, parents and society are all stakeholders in the success of the student’s education. Stakeholders, with diverse voices, will be included in the learning experience manifested by the Research Expo.</li>
-<li>The Research Expo celebrates scientific inquiry in a risk free environment in which each and every student can experience success. Self esteem and the feeling of self worth are essential for creating a sensitive and compassionate citizen who will strive to better the community and our global society.</li>
-<li>The Research Expo supports authentic research which meets the needs of all students with regard to their learning styles.</li>
-<li>The Research Expo facilitates the ability of the student to gain the knowledge, comprehend the knowledge, apply the knowledge, analyze the knowledge for the significance of its components, synthesize new hypotheses from the knowledge mastered, and evaluate the new hypotheses.</li></ul><a class="forSmallDevices" href="#">Top of page</a></p>
-				</section>
-                <h2 class="subpage_headings greenTextColor">Past Winners</h2>
-				<p><a href="winners.html">Click here to see the winners of the 2018 BCA Research Expo!</a></p>
- 			</article>
-    </section>
-    <!-- end id "mainContent" -->
-        <!-- Begin aside section (right side of the page under the slides) -->
-    <footer id="footer"></footer>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<article id="about" title="About the Expo">
+			<h2 class="subpage_headings greenTextColor">About The Expo 2020</h2>
+			<p class="increasedLineSpacing">We are proud to announce that the Bergen County Academies has been approved
+				by the Society for Science and the Public, to run our own ISEF-affiliated fair The BCA Research Expo.
+				Participation is limited to the students attending the school. The BCA Expo is affiliated with the <a
+					href="https://student.societyforscience.org/intel-isef" title="ISEF" target="_blank">Intel
+					International Science and Engineering Fair (ISEF)</a>. Winners of the BCA Research Expo competition
+				will represent BCA at ISEF. Each year, more than 7 million high school students around the world,
+				develop original research projects and present their work at local science competitions with the hope of
+				making it to the Intel International Science and Engineering Fair, a program of the Society for Science
+				&amp; the Public. Approximately 1,700 winners of local, regional, state, and national competitions are
+				invited to participate in this week-long celebration of science, technology, engineering, and math. At
+				the event, these young innovators share ideas, showcase cutting-edge research, and compete for more than
+				4 million dollars in awards and scholarships.line<a class="forSmallDevices" href="#">Top of page</a></p>
+			<section id="mission" title="Mission">
+				<h2 class="subpage_headings greenTextColor">Our Mission</h2>
+				<p>
+				<ul class="indented">
+					<li>The Research Expo supports science education in a safe, student oriented atmosphere which
+						challenges the student to think critically.</li>
+					<li>The Research Expo promotes diversity which is celebrated and instruction which is personalized.
+					</li>
+					<li>The Research Expo will encourage the student to make ethical decisions and acquire skills to
+						live in a global society by investigating bold solutions to complex challenges.</li>
+					<li>Students, teachers, scientists, parents and society are all stakeholders in the success of the
+						student’s education. Stakeholders, with diverse voices, will be included in the learning
+						experience manifested by the Research Expo.</li>
+					<li>The Research Expo celebrates scientific inquiry in a risk free environment in which each and
+						every student can experience success. Self esteem and the feeling of self worth are essential
+						for creating a sensitive and compassionate citizen who will strive to better the community and
+						our global society.</li>
+					<li>The Research Expo supports authentic research which meets the needs of all students with regard
+						to their learning styles.</li>
+					<li>The Research Expo facilitates the ability of the student to gain the knowledge, comprehend the
+						knowledge, apply the knowledge, analyze the knowledge for the significance of its components,
+						synthesize new hypotheses from the knowledge mastered, and evaluate the new hypotheses.</li>
+				</ul><a class="forSmallDevices" href="#">Top of page</a></p>
+			</section>
+			<h2 class="subpage_headings greenTextColor">Past Winners</h2>
+			<p><a href="winners.html">Click here to see the winners of the 2018 BCA Research Expo!</a></p>
+		</article>
+	</section>
+	<!-- end id "mainContent" -->
+	<!-- Begin aside section (right side of the page under the slides) -->
+	<footer id="footer"></footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/expo.js"></script>
 	<script src="js/rwdImageMaps.min.js"></script>
 	<script>
-        $(document).ready(function(e) {
-            $('img[usemap]').rwdImageMaps();
-        });
-    </script>    
-    <script>
-	 /*// DOM ready
-	 $(function() {
-      // Create the dropdown base
-      $("<select />").appendTo("nav");
-      
-      // Create default option "Go to..."
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Go to..."
-      }).appendTo("nav select");
-      
-      // Populate dropdown with menu items
-      $("nav a").each(function() {
-       var el = $(this);
-       $("<option />", {
-           "value"   : el.attr("href"),
-           "text"    : el.text()
-       }).appendTo("nav select");
-      });
-      
-	   // To make dropdown actually work
-      $("nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
-	 
-	 });*/
+		$(document).ready(function (e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+	</script>
+	<script>
+		/*// DOM ready
+		$(function() {
+		 // Create the dropdown base
+		 $("<select />").appendTo("nav");
+		 
+		 // Create default option "Go to..."
+		 $("<option />", {
+			"selected": "selected",
+			"value"   : "",
+			"text"    : "Go to..."
+		 }).appendTo("nav select");
+		 
+		 // Populate dropdown with menu items
+		 $("nav a").each(function() {
+		  var el = $(this);
+		  $("<option />", {
+			  "value"   : el.attr("href"),
+			  "text"    : el.text()
+		  }).appendTo("nav select");
+		 });
+		 
+		  // To make dropdown actually work
+		 $("nav select").change(function() {
+		   window.location = $(this).find("option:selected").val();
+		 });
+	    
+		});*/
 	</script>
 </body>
+
 </html>
